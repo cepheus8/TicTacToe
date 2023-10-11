@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.restart-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  padding: 30px;
+  background-color: #40864d;
+  border: none;
+  font-size: 22px;
+}
+
+.game {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.square {
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game :first-child,
+.game :nth-child(3),
+.game :nth-child(7),
+.game :nth-child(9) {
+  border: none;
+}
+
+.game :nth-child(2),
+.game :nth-child(8) {
+  border: none;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.game :nth-child(4),
+.game :nth-child(6) {
+  border: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+}
+
+.ex {
+  height: 110px;
+  width: 110px;
+  border: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  background-color: #40864d;
+}
+
+.score {
+  display: flex;
+  gap: 90px;
+  align-self: self-start;
+  margin-top: 30px;
+  margin-right: 100px;
+  padding: 0 30px;
+}
+
+.player {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 35px;
+}
+
+.player-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  width: 180px;
+}
+
+.player-score__1,
+.player-score__2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  align-self: flex-end;
+}
+
+.active {
+  color: #40864d;
+}
