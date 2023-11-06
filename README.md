@@ -11,3 +11,5 @@ This project was created for a purpose of learning JavaScript/HTML/CSS and it ha
 Project was created purely with JavaScript without use of any frameworks and libraries.
 
 Works as standard Tic-Tac-Toe game.
+
+You can play on: [https://tictactoe-rw.netlify.app](https://tictactoe-rw.netlify.app).
