@@ -27,10 +27,10 @@ let newScore2 = Number(score2.textContent);
 
 square.forEach((el, id) => {
   el.addEventListener("click", function (e) {
-    player1Label.classList.toggle("active");
-    player2Label.classList.toggle("active");
     if (!button.classList.contains("hidden")) return;
     if (array0.includes(id) || arrayX.includes(id)) return;
+    player1Label.classList.toggle("active");
+    player2Label.classList.toggle("active");
     const childElement = e.target.children;
     if (activePlayer === 0) {
       childElement[0].classList.remove("hidden");
