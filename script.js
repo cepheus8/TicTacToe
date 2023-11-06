@@ -4,6 +4,8 @@ const square = document.querySelectorAll(".square");
 const button = document.querySelector(".restart-btn");
 const score1 = document.querySelector(".player-score__1");
 const score2 = document.querySelector(".player-score__2");
+const player1Label = document.querySelector(".player-title__1");
+const player2Label = document.querySelector(".player-title__2");
 
 let activePlayer = 0;
 
@@ -25,6 +27,8 @@ let newScore2 = Number(score2.textContent);
 
 square.forEach((el, id) => {
   el.addEventListener("click", function (e) {
+    player1Label.classList.toggle("active");
+    player2Label.classList.toggle("active");
     if (!button.classList.contains("hidden")) return;
     if (array0.includes(id) || arrayX.includes(id)) return;
     const childElement = e.target.children;
