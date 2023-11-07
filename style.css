@@ -20,7 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #adb5bd;
+  /* background-color: #adb5bd; */
+  background: linear-gradient(#adb5bd, #dee2e6);
 }
 
 .restart-btn {
