@@ -10,6 +10,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 body {
@@ -26,8 +27,8 @@ body {
 
 .restart-btn {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  bottom: 180px;
+  right: 180px;
   display: block;
   padding: 30px;
   background-color: #40864d;
@@ -128,4 +129,67 @@ body {
 
 .active {
   color: #40864d;
+}
+
+@media (max-width: 62.5rem) {
+  .square {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+  }
+
+  .ex {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 51.6rem) {
+  .square {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle {
+    height: 53px;
+    width: 53px;
+  }
+
+  .ex {
+    height: 53px;
+    width: 53px;
+  }
+  .player-title__1,
+  .player-title__2 {
+    font-size: 12px;
+  }
+
+  .player-score__1,
+  .player-score__2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 46.125rem) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .game {
+    order: 2;
+  }
+
+  .score {
+    align-self: center;
+  }
+
+  .restart-btn {
+    bottom: 5px;
+    right: 0px;
+  }
 }
